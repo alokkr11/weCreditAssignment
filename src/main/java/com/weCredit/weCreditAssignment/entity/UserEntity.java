@@ -16,9 +16,8 @@ public class UserEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private String email;
     private String mobileNumber;
-    private boolean isVerified;
+    private boolean isLoggedIn;
     private String lastDeviceFingerprint; // Stores the last known device fingerprint
     private String otp;
     private LocalDateTime otpExpiryTime;

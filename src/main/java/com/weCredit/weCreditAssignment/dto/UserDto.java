@@ -7,8 +7,6 @@ import lombok.Data;
 public class UserDto {
     @NotNull(message = "Name cannot be null")
     private String name;
-    @Email(message = "Invalid email format")
-    private String email;
     @Pattern(regexp = "^\\d{10}$")
     private String mobileNumber;
 }
